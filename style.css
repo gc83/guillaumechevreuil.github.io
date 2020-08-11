@@ -1,0 +1,184 @@
+/*============================
+            communs
+============================*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*============================
+          header
+============================*/
+
+nav {
+    background-color: black;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+
+nav .container ul li a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+.logo {
+    padding: 10px;
+    width: 85px;
+}
+
+.contact {
+    padding: 10px 20px !important;
+    background-color: rgb(0, 117, 195);
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
+
+
+/*============================
+          main
+============================*/
+
+.construction {
+    text-align: center;
+    padding-top: 3em;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 4em;
+    letter-spacing: 0.18em;
+    text-align: center;
+    margin: 150px 0 0 50px;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 4em;
+    text-align: center;
+    font-weight: 900;
+    line-height: 1em;
+}
+
+.color {
+    margin: 10px;
+}
+
+.color-t {
+    margin-left: 50px;
+}
+
+.colors {
+    max-width: 200px;
+    margin-bottom: 30px;
+}
+
+.noir {
+    background-color: black;
+    padding: 18px 18px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.vert {
+    background-color: green;
+    padding: 18px 18px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.bleu {
+    background-color: blue;
+    padding: 18px 18px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.violet {
+    background-color: blueviolet;
+    padding: 18px 18px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.description {
+    max-width: 25vw;
+    margin-left: 50px;
+}
+
+model-viewer {
+    width: 50vw;
+    height: 80vh;
+    margin-left: 200px;
+}
+
+model-viewer:focus {
+    outline: none;
+}
+
+
+/*============================
+          footer
+============================*/
+
+.footerlogo {
+    max-width: 200px;
+}
+
+footer nav p {
+    text-align: center;
+    color: rgb(0, 117, 195);
+    font-size: 0.825em;
+    font-weight: bold;
+    padding: 10px 0 30px 0;
+    margin: 0;
+}
+
+footer nav .hr {
+    margin: 10px auto;
+    width: 190px;
+    height: 2px;
+    background-color: white;
+}
