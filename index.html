@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Guillaume CHEVREUIL</title>
-    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js" integrity="sha256-Z6O4M7tqzCtU4AEYZT3+moexyqFde5vZNka/gcaixa0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lottie-api@1.0.2/dist/lottie_api.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+
     <link rel="stylesheet" href="style.css">
 
 
@@ -35,22 +40,80 @@
                     <a href="https://www.youtube.com/channel/UCglrjmfP-1fvz2277M0R-zg/featured"><img src="image/yt-logo-bw.jpg" alt="social-logo"></a>
                 </li>
             </ul>
-            <a href="#contact" class="contact">Contact</a>
+            <a href="mailto:akgc@live.fr?subject=Contact from CG Portfolio" class="contact">Contact</a>
         </div>
     </nav>
 
+    <!-- domaines -->
+    <canvas id='canv'></canvas>
+    <div class="dom">
 
-    <!-- hero -->
+        <h1 class="text">Guillaume Chevreuil</h1>
 
-    <section class="">
+        <div class="domaines container">
 
-        <!-- <p class="construction">Under constrcution</p> -->
-        <h1>Guillaume Chevreuil<br> <br>Portfolio</h1>
-        <!-- <h2>Webdesign<br>Développement web<br>Modélisation 3D</h2> -->
-        <h2>Under constrcution</h2>
+            <div class='card'>
+                <div class='box'>
+                    <div class='imgBx'><img src='image/webdesign.jpg'></div>
+                    <div class='content'>
+                        <div>
+                            <h2>Webdesign</h2>
+                            <p>Ensemble, nous échangeons sur la création d'une identité graphique qui vous corresponde ainsi qu'à la meilleur experience de navigation pour vos utilisateurs.<br>Enusite, Je digitalise votre logo puis vos maquettes fonctionnelles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class='card'>
+                <div class='box'>
+                    <div class='imgBx'><img src='image/modelisation3d.jpg'></div>
+                    <div class='content'>
+                        <div>
+                            <h2>Modélisation 3D</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class='card'>
+                <div class='box'>
+                    <div class='imgBx'><img src='image/intégration.jpg'></div>
+                    <div class='content'>
+                        <div>
+                            <h2>Intégration Web<br> </h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <canvas id='canv'></canvas>
+    <!-- lottie -->
+    <section class="titre">
+
+        <div class="section container">
+            <div class="h2">
+                <h2 class="text">Portfolio</h2>
+                <!-- <h2>Webdesign<br>Développement web<br>illustration/animation 3D</h2> -->
+                <h2 class="text">Under constrcution</h2>
+                <lottie-player class="" autoplay loop mode="normal" src="https://assets8.lottiefiles.com/packages/lf20_vFctN8.json" style="width: 10vw;margin: auto;" speed="1">
+                </lottie-player>
+            </div>
+            <lottie-player class="card" autoplay loop mode="normal" src="https://assets3.lottiefiles.com/packages/lf20_kU9i7G.json" style="width: 30vw" speed="1">
+            </lottie-player>
+        </div>
     </section>
+
+
+
+
+    <!-- contact -->
+    <div class="contact-form">
+        <a href="mailto:akgc@live.fr?subject=Contact from CG Portfolio" class="contact">Contact</a>
+    </div>
 
 
     <!-- footer -->
@@ -80,7 +143,7 @@
     </footer>
 
 
-    <script type="text/javascript">
+    <script type="text/javascript" src="script.js">
     </script>
 
 </body>
