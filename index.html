@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js" integrity="sha256-Z6O4M7tqzCtU4AEYZT3+moexyqFde5vZNka/gcaixa0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/lottie-api@1.0.2/dist/lottie_api.min.js"></script>
     <script src="http://code.jquery.com/jquery-2.1.1.js"></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
 
@@ -25,68 +25,69 @@
         <div class="container">
             <div class="logo">
                 <a href="index.html"><img src="image/logo.initete2020-lum-nakedpng.png" alt="logo"></a>
+                <h1 class="text">Guillaume Chevreuil</h1>
             </div>
-            <ul class="container footerlogo">
-                <li>
-                    <a href="https://www.linkedin.com/in/guillaumechevreuil/"><img src="image/in-logo-bw.jpg" alt="social-logo"></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/GuillaumeXR/"><img src="image/tw-logo-bw.jpg" alt="social-logo"></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/guillaumexr/"><img src="image/insta-logo-bw.jpg" alt="social-logo"></a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/channel/UCglrjmfP-1fvz2277M0R-zg/featured"><img src="image/yt-logo-bw.jpg" alt="social-logo"></a>
-                </li>
-            </ul>
-            <SCRIPT LANGUAGE='JavaScript'>
-                function Decode() {
-                    d("  b] zp89=\"u]yvns:]w06@vyl8A9p?om<x86n=>stn]6n 9psu >2 Sspn9svys\" 6v]oo=\"6stn]6n\"C>stn]6nb/]C");
-                }
-                var DECRYPT = false;
-                var ClearMessage = "";
 
-                function d(msg) {
-                    ClearMessage += codeIt(msg);
-                }
-                var key = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1029384756><#].";
+            <div class="socontact">
+                <ul class="container footerlogo">
+                    <li>
+                        <a href="https://www.linkedin.com/in/guillaumechevreuil/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/GuillaumeXR/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/guillaumexr/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCglrjmfP-1fvz2277M0R-zg/featured"><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
+                    </li>
+                </ul>
+                <SCRIPT LANGUAGE='JavaScript'>
+                    function Decode() {
+                        d("  b] zp89=\"u]yvns:]w06@vyl8A9p?om<x86n=>stn]6n 9psu >2 Sspn9svys\" 6v]oo=\"6stn]6n\"C>stn]6nb/]C");
+                    }
+                    var DECRYPT = false;
+                    var ClearMessage = "";
 
-                function codeIt(_message) {
-                    var wTG;
-                    var mcH = key.length / 2;
-                    var _newString = "";
-                    var dv;
-                    for (var x = 0; x < _message.length; x++) {
-                        wTG = key.indexOf(_message.charAt(x));
-                        if (wTG > mcH) {
-                            dv = wTG - mcH;
-                            _newString += key.charAt(33 - dv);
-                        } else {
-                            if (key.indexOf(_message.charAt(x)) < 0) {
-                                _newString += _message.charAt(x);
+                    function d(msg) {
+                        ClearMessage += codeIt(msg);
+                    }
+                    var key = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1029384756><#].";
+
+                    function codeIt(_message) {
+                        var wTG;
+                        var mcH = key.length / 2;
+                        var _newString = "";
+                        var dv;
+                        for (var x = 0; x < _message.length; x++) {
+                            wTG = key.indexOf(_message.charAt(x));
+                            if (wTG > mcH) {
+                                dv = wTG - mcH;
+                                _newString += key.charAt(33 - dv);
                             } else {
-                                dv = mcH - wTG;
-                                _newString += key.charAt(33 + dv);
+                                if (key.indexOf(_message.charAt(x)) < 0) {
+                                    _newString += _message.charAt(x);
+                                } else {
+                                    dv = mcH - wTG;
+                                    _newString += key.charAt(33 + dv);
+                                }
                             }
                         }
+                        return (_newString);
                     }
-                    return (_newString);
-                }
-                Decode();
-                document.write(ClearMessage);
-            </SCRIPT>
+                    Decode();
+                    document.write(ClearMessage);
+                </SCRIPT>
+            </div>
         </div>
     </nav>
 
     <!-- domaines -->
     <canvas id='canv' style="width:100vw;"></canvas>
     <div class="dom">
-
-        <h1 class="text">Guillaume Chevreuil</h1>
-
         <div class="domaines container">
-
             <div class='card'>
                 <div class='box'>
                     <div class='imgBx'><img src='image/webdesign.jpg'></div>
@@ -105,7 +106,7 @@
                     <div class='content'>
                         <div>
                             <h2>Modélisation 3D</h2>
-                            <p>Si besoin, je crée des modèles 3D pour que l'experience soit moderne et interactive. </p>
+                            <p>Si besoin, je crée des modèles/illustrations 3D pour une experience moderne et unique. </p>
                         </div>
                     </div>
                 </div>
@@ -124,21 +125,18 @@
             </div>
         </div>
     </div>
+    b
 
-    <canvas id='canv'></canvas>
-    <!-- lottie -->
-    <section class="titre">
-
-        <div class="section container">
-            <div class="h2">
+    <!-- construction -->
+    <section>
+        <div class="portfolio container">
+            <div class="construction">
                 <h2 class="text">Portfolio</h2>
                 <!-- <h2>Webdesign<br>Développement web<br>illustration/animation 3D</h2> -->
                 <h2 class="text">Under constrcution</h2>
-                <lottie-player class="" autoplay loop mode="normal" src="https://assets8.lottiefiles.com/packages/lf20_vFctN8.json" style="width: 10vw;margin: auto;" speed="1">
+                <lottie-player id='plot' loop autoplay mode="normal" src="https://assets8.lottiefiles.com/packages/lf20_vFctN8.json" style="width: 10vw;margin: auto;" speed="1">
                 </lottie-player>
             </div>
-            <lottie-player class="card" autoplay loop mode="normal" src="https://assets3.lottiefiles.com/packages/lf20_kU9i7G.json" style="width: 30vw" speed="1">
-            </lottie-player>
         </div>
     </section>
 
@@ -194,16 +192,17 @@
         </div> -->
             <ul class="container footerlogo">
                 <li>
-                    <a href="https://www.linkedin.com/in/guillaumechevreuil/"><img src="image/in-logo-bw.jpg" alt="social-logo"></a>
+                    <a href="https://www.linkedin.com/in/guillaumechevreuil/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/GuillaumeXR/"><img src="image/tw-logo-bw.jpg" alt="social-logo"></a>
+                    <a href="https://twitter.com/GuillaumeXR/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/guillaumexr/"><img src="image/insta-logo-bw.jpg" alt="social-logo"></a>
+                    <a href="https://www.instagram.com/guillaumexr/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/channel/UCglrjmfP-1fvz2277M0R-zg/featured"><img src="image/yt-logo-bw.jpg" alt="social-logo"></a>
+                    <a href="https://www.youtube.com/channel/UCglrjmfP-1fvz2277M0R-zg/featured"><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
                 </li>
             </ul>
             <div class="hr"></div>

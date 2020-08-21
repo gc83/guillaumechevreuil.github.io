@@ -9,7 +9,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: black;
 }
 
 .container {
@@ -26,6 +25,11 @@ img {
 
 .text {
     position: relative;
+}
+
+.fa {
+    color: black;
+    font-size: 2em;
 }
 
 
@@ -61,15 +65,40 @@ nav .container ul li a {
 
 .logo {
     padding: 10px;
-    width: 85px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px !important;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    letter-spacing: 0.18em;
+    text-align: center;
+    padding: 1rem 0 0 1rem;
+    font-weight: 100;
+    margin-top: 0;
+    color: white;
+}
+
+.socontact {
+    display: flex;
 }
 
 .contact {
-    padding: 10px 20px !important;
-    background-color: rgb(0, 117, 195);
+    padding: 10px 20px;
     border-radius: 6px;
+    background: linear-gradient(45deg, #9c42f8, #01fefd);
     color: white;
+    font-weight: 600;
     text-decoration: none;
+}
+
+.fa {
+    color: white;
+    font-size: 1.25em;
 }
 
 
@@ -77,32 +106,21 @@ nav .container ul li a {
           main
 ============================*/
 
-.construction {
-    text-align: center;
-    padding-top: 3em;
-}
-
 section {
     position: relative;
-    background-color: #dfdfdf;
+    text-align: center;
+    padding-top: 3em;
+    background: linear-gradient(45deg, #9c42f8, #01fefd);
 }
 
-.section {
+.portfolio {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-h1 {
-    font-size: 3em;
-    letter-spacing: 0.18em;
-    text-align: center;
-    padding: 100px 0 0 0;
-    font-weight: 100;
-    margin-top: 0;
-}
-
-.h2 {
-    padding-top: 100px;
+.construction {
+    padding-top: 10px;
 }
 
 h2 {
@@ -110,27 +128,6 @@ h2 {
     text-align: center;
     font-weight: 900;
     line-height: 1em;
-}
-
-.color {
-    margin: 10px;
-}
-
-.color-t {
-    margin-left: 50px;
-}
-
-.colors {
-    max-width: 200px;
-    margin-bottom: 30px;
-}
-
-.bleu {
-    background-color: blue;
-    padding: 18px 18px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
 }
 
 
@@ -143,19 +140,17 @@ canvas {
 
 /* domaines */
 
-.dom {}
-
 .domaines {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     transform-style: preserve-3d;
-    padding: 50px 0;
+    padding: 90px 0 40px 0;
 }
 
 .domaines .card {
-    position: relative;
+    /* position: relative; */
     width: 320px;
     height: 320px;
     margin: 20px;
@@ -221,7 +216,7 @@ canvas {
 }
 
 .domaines .card .box .content h2 {
-    color: #fff;
+    color: white;
     margin-bottom: 5px;
 }
 
@@ -230,9 +225,9 @@ canvas {
 }
 
 
-/* titre */
+/* construction*/
 
-.titre {
+.construction {
     margin-top: 150px;
 }
 
@@ -252,6 +247,7 @@ canvas {
 
 footer {
     padding-top: 20px;
+    background-color: black;
 }
 
 .footerlogo {
@@ -260,7 +256,7 @@ footer {
 
 footer nav p {
     text-align: center;
-    color: rgb(0, 117, 195);
+    color: #04b1b1;
     font-size: 0.825em;
     font-weight: bold;
     padding: 10px 0 20px 0;

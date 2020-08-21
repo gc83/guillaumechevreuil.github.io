@@ -34,16 +34,16 @@ function nPart() {
 }
 
 var pull = .03;
-// texte =>
+// text =>
 function txt() {
     var t = "".split("").join(String.fromCharCode(0x2004));
     $.font = "3.5em Philosopher";
     $.fillStyle = 'hsla(0,0%,30%,1)';
     $.fillText(t, (c.width - $.measureText(t).width) * 0.5, c.height * 0.5);
 }
-
+// background
 function draw() {
-    $.fillStyle = 'hsla(0,0%,95%,.45)';
+    $.fillStyle = 'white';
     $.fillRect(0, 0, c.width, c.height);
     txt();
     dst.ref();
@@ -74,9 +74,9 @@ function addP(px, py) {
     var p = Node(c, px, py);
     dst.add(p);
 }
-
+//  particles color
 function conn(p1, p2) {
-    $.strokeStyle = 'hsla(0,0%,15%,1)';
+    $.strokeStyle = '#aacac3c9';
     var dist = _dist(p1, p2);
     $.globalAlpha = 1 - dist / 100;
     $.beginPath();
