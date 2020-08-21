@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
 }
 
@@ -31,6 +31,164 @@ img {
     font-size: 1.25em;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
+
+/*============================
+         button
+============================*/
+
+.button {
+    background-color: transparent;
+    border: 0 none;
+    color: black;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    line-height: 1.4;
+    margin: 10px;
+    padding: 0.875em 1.42857em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+    white-space: nowrap;
+}
+
+.button::after {
+    background: #0f637d none repeat scroll 0 0;
+    bottom: 0px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50.5%;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: width 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.4s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+    width: 80%;
+}
+
+.button span {
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.4s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+    width: 100%;
+}
+
+.button span::before,
+.button span::after {
+    background: #0f637d none repeat scroll 0 0;
+    content: "";
+    display: block;
+    position: absolute;
+    transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s, -webkit-transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+}
+
+.button span:first-child {
+    height: 100%;
+}
+
+.button span:first-child::before,
+.button span:first-child::after {
+    bottom: 0;
+    height: 100%;
+    transform: scale3d(1, 0, 1);
+    transform-origin: center bottom 0;
+    transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.2s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s, -webkit-transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.2s;
+    width: 1px;
+}
+
+.button span:first-child::before {
+    left: 0;
+}
+
+.button span:first-child::after {
+    right: -1px;
+}
+
+.button span:last-child {
+    height: 1px;
+    width: 100%;
+}
+
+.button span:last-child::before,
+.button span:last-child::after {
+    bottom: 0;
+    height: 1px;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s, -webkit-transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+    width: 100%;
+}
+
+.button span:last-child::before {
+    left: 0;
+    transform-origin: left bottom 0;
+}
+
+.button span:last-child::after {
+    right: 0;
+    transform-origin: right bottom 0;
+}
+
+.button:hover {
+    color: #2e3233 !important;
+    opacity: 1;
+    outline: 0 none;
+    text-decoration: none;
+    transition: color 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+}
+
+.button:hover::after {
+    background: #232f39 none repeat scroll 0 0;
+    transition: width 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+    width: 100%;
+}
+
+.button:hover span:first-child::before,
+.button:hover span:first-child::after {
+    background: #232f39 none repeat scroll 0 0;
+    transform: scale3d(1, 1, 1);
+    transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.2s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s, -webkit-transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.2s;
+}
+
+.button:hover span:last-child::before,
+.button:hover span:last-child::after {
+    background: #232f39 none repeat scroll 0 0;
+    transform: scale3d(1, 1, 1);
+    transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.4s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s, -webkit-transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.4s;
+}
+
+.button:focus {
+    background: #232f39 none repeat scroll 0 0;
+    color: white !important;
+    transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+}
+
+.button:focus::after {
+    opacity: 0;
+}
+
+.button.active {
+    border-color: #000;
+    color: #000 !important;
+}
+
+.button.active:hover,
+.button.active:focus {
+    background: transparent none repeat scroll 0 0;
+}
+
+.button-container .button,
+.button-container button,
+.button-container input[type="submit"],
+.button-container input[type="reset"],
+.button-container input[type="button"] {
+    margin-bottom: 10px;
+}
+
 
 /*============================
           header
@@ -38,6 +196,7 @@ img {
 
 nav {
     background-color: transparent;
+    box-shadow: 0px 2px 5px 0px rgba(230, 230, 230, 1);
 }
 
 nav .container {
@@ -69,8 +228,9 @@ nav .container ul li a {
     align-items: center;
 }
 
-.logo img {
-    width: 40px !important;
+.logo a {
+    text-decoration: none;
+    color: black;
 }
 
 .logo h1 {
@@ -93,8 +253,8 @@ nav .container ul li a {
 .contact {
     padding: .5em 1.5em;
     border-radius: 6px;
-    background-color: #1bb4aa;
-    color: white;
+    background-color: ;
+    color: black;
     font-weight: 600;
     text-decoration: none;
     transition-property: background-color;
@@ -103,9 +263,7 @@ nav .container ul li a {
     /* La transition dure 1s */
 }
 
-.contact:hover {
-    background-color: #11E6C8;
-}
+.contact:hover {}
 
 
 /*============================
@@ -114,7 +272,6 @@ nav .container ul li a {
 
 section {
     text-align: center;
-    background: linear-gradient(45deg, #21cf95, #01fefd);
 }
 
 .portfolio {
