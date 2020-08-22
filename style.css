@@ -194,7 +194,7 @@ img {
           header
 ============================*/
 
-nav {
+header nav {
     background-color: transparent;
     box-shadow: 0px 2px 5px 0px rgba(230, 230, 230, 1);
 }
@@ -386,7 +386,8 @@ h2 {
 
 footer {
     padding-top: 20px;
-    background-color: black;
+    margin-top: 50px;
+    box-shadow: 0px 2px 5px 5px rgba(230, 230, 230, 1);
 }
 
 .footerlogo {
@@ -395,20 +396,19 @@ footer {
 
 footer nav p {
     text-align: center;
-    color: white;
-    font-size: 0.825em;
+    font-size: 0.75em;
     font-weight: bold;
     padding: 10px 0 20px 0;
     margin: 0;
 }
 
 footer .fa {
-    color: white;
+    color: black;
 }
 
 footer nav .hr {
     margin: 10px auto;
     width: 190px;
-    height: 2px;
-    background-color: white;
+    height: 1px;
+    background-color: black;
 }
