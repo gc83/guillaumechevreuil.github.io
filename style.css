@@ -361,6 +361,7 @@ h2 {
     background: linear-gradient(45deg, #9c42f8, #01fefd);
     transform: translateZ(100px)rotateZ(180deg);
     border-radius: 4px;
+    min-width: 350px;
 }
 
 .domaines .card .box .content h2 {
