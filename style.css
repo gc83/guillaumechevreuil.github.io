@@ -246,6 +246,12 @@ nav .container ul li a {
     display: flex;
 }
 
+.vr {
+    color: black !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .navlogo .fa {
     color: black;
 }
