@@ -273,8 +273,26 @@ nav .container ul li a {
           hero
 ============================*/
 
-lottie-player {
+.lotmob {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.lotdesk {
     width: 1080px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .lotmob {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lotdesk {
+        display: none;
+    }
 }
 
 
