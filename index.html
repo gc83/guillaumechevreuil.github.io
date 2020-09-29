@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
     <!--parallaxjs-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" integrity="sha512-/6TZODGjYL7M8qb7P6SflJB/nTGE79ed1RfJk3dfm/Ib6JwCT4+tOfrrseEHhxkIhwG8jCl+io6eaiWLS/UX1w==" crossorigin="anonymous"></script>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Lottie-interactivity cdn-->
     <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
     <!-- Lottie-player cdn-->
@@ -58,16 +60,16 @@
                 <div class="socontact">
                     <ul class="container navlogo">
                         <li>
-                            <a href="https://www.linkedin.com/in/guillaumechevreuil/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/guillaumechevreuil/"><i class="fa fa-linkedin text-white" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/GuillaumeXR/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/GuillaumeXR/"><i class="fa fa-twitter text-white" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/guillaumexr/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/guillaumexr/"><i class="fa fa-instagram text-white" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a class="vr" href="https://www.youtube.com/channel/UCglrjmfP-1fvz2277M0R-zg/featured">
+                            <a class="vr text-white" href="https://www.youtube.com/channel/UCglrjmfP-1fvz2277M0R-zg/featured">
                                 <!-- <i class="fa fa-youtube-play" aria-hidden="true"></i> -->360°
                             </a>
                         </li>
@@ -117,37 +119,39 @@
             </div>
         </nav>
 
-        <div class="perso container">
-            <div id="posterParallax" class="poster container">
-                <h1>
-                    <div data-depth="1" class="title layer">Guillaume</div>
-                    <div data-depth="1.5" class="title2 layer">CHEVREUIL</div>
-                </h1>
-                <!--  <h2 data-depth="0.1" class="title3 layer">Avec nos solutions <br>d'éclairage public à Led.</h2>-->
+        <div class="persobg">
+            <div class="perso container">
+                <div id="posterParallax" class="poster container">
+                    <h1>
+                        <div data-depth="1" class="title layer">Guillaume</div>
+                        <div data-depth="1.5" class="title2 layer">CHEVREUIL</div>
+                    </h1>
+                    <!--  <h2 data-depth="0.1" class="title3 layer">Avec nos solutions <br>d'éclairage public à Led.</h2>-->
+                </div>
+                <lottie-player class="lotmob" src="https://assets1.lottiefiles.com/packages/lf20_hwk5kfmd.json" background="transparent" speed="1" loop autoplay></lottie-player>
+
+                <lottie-player class="lotdesk" id="mouseMove" src="https://assets1.lottiefiles.com/packages/lf20_hwk5kfmd.json" background="transparent"></lottie-player>
+                <script>
+                    //lottie
+                    LottieInteractivity.create({
+                        player: '#mouseMove',
+                        mode: 'cursor',
+                        actions: [{
+                            position: {
+                                x: [0, 1],
+                                y: [0, 1]
+                            },
+                            type: 'seek',
+                            frames: [-100, 250],
+                        }, ],
+                    });
+                </script>
+
+
+
+
+                <!-- <lottie-player id="mouseMove" src="parso.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop controls autoplay></lottie-player> -->
             </div>
-            <lottie-player class="lotmob" src="https://assets7.lottiefiles.com/packages/lf20_ysnzdzyl.json" background="transparent" speed="1" loop autoplay></lottie-player>
-
-            <lottie-player class="lotdesk" id="mouseMove" src="https://assets7.lottiefiles.com/packages/lf20_ysnzdzyl.json" background="transparent"></lottie-player>
-            <script>
-                //lottie
-                LottieInteractivity.create({
-                    player: '#mouseMove',
-                    mode: 'cursor',
-                    actions: [{
-                        position: {
-                            x: [0, 1],
-                            y: [0, 1]
-                        },
-                        type: 'seek',
-                        frames: [-100, 250],
-                    }, ],
-                });
-            </script>
-
-
-
-
-            <!-- <lottie-player id="mouseMove" src="parso.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop controls autoplay></lottie-player> -->
         </div>
     </header>
     <!-- domaines -->
