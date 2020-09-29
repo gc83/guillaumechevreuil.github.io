@@ -332,7 +332,7 @@ nav .container ul li a {
 }
 
 .title2 {
-    background: linear-gradient(#00fbd2 78%, white 20%);
+    background: linear-gradient(#00fbd2 70%, white 20%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 8rem;
