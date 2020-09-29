@@ -195,8 +195,8 @@ img {
 ============================*/
 
 header nav {
-    background-color: white;
-    box-shadow: 0px 2px 5px 0px rgba(230, 230, 230, 1);
+    background: white;
+    /* box-shadow: 0px 2px 5px 0px rgba(230, 230, 230, 1); */
 }
 
 nav .container {
@@ -204,6 +204,16 @@ nav .container {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.logo img {
+    width: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .logo img {
+        width: 50px;
+    }
 }
 
 ul {
@@ -220,17 +230,6 @@ nav .container ul li a {
     text-decoration: none;
     color: white;
     font-size: 1em;
-}
-
-.logo {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.logo a {
-    text-decoration: none;
-    color: black;
 }
 
 .socontact {
@@ -264,29 +263,52 @@ nav .container ul li a {
           hero
 ============================*/
 
+
+/* #posterParallax {
+    background: -webkit-linear-gradient(transparent, transparent), url("image/logo.initete2020-lum-nakedpng.png");
+    background-image: -o-linear-gradient(transparent, transparent);
+    background-size: cover;
+    font-family: Arial Black;
+    color: #000;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: block;
+}
+
+#posterParallax h1 {
+    line-height: 90px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, .1);
+    -webkit-transition: text-shadow 0s ease;
+    transition: text-shadow 0s ease;
+} */
+
 .poster {
     z-index: 1000;
     padding-bottom: 80px;
+    position: absolute;
 }
 
 .title {
+    color: white;
     text-align: center;
-    padding-top: 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
     z-index: 1000;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .title2 {
+    color: white;
     margin-left: 3rem;
-    padding-top: 7rem;
-    font-size: 2rem;
+    padding-top: 4rem;
+    font-size: 1.25rem;
     z-index: 1000;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (min-width: 768px) {
     .title {
-        margin-left: -20rem;
+        margin-left: 10rem;
         font-size: 5rem;
     }
 }
@@ -295,6 +317,7 @@ nav .container ul li a {
     .title2 {
         margin-left: 30rem;
         font-size: 4.5rem;
+        padding-top: 6rem;
     }
 }
 
