@@ -1,3 +1,9 @@
+//paralax
+var scene = document.getElementById('posterParallax');
+var parallax = new Parallax(scene, {
+    selector: '.layer'
+});
+
 var c = document.getElementById("canv");
 var $ = c.getContext("2d");
 c.width = window.innerWidth;

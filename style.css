@@ -273,13 +273,41 @@ nav .container ul li a {
           hero
 ============================*/
 
+.poster {
+    z-index: 1000;
+    margin-bottom: 50px;
+}
+
+.title {
+    margin-left: 12rem;
+    padding-top: 2rem;
+    font-size: 5rem;
+    font-weight: 500;
+    z-index: 1000;
+}
+
+
+/* @media screen and (max-width: 375px) {
+    .title {
+        padding-top: 3rem;
+    }
+} */
+
+.title2 {
+    margin-left: 30rem;
+    padding-top: 7rem;
+    font-size: 4rem;
+    z-index: 1000;
+}
+
 .lotmob {
     width: 100%;
     margin: 0 auto;
 }
 
 .lotdesk {
-    width: 1080px;
+    width: 95%;
+    padding-left: 5%;
     margin: 0 auto;
 }
 
