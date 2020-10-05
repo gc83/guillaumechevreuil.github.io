@@ -50,7 +50,7 @@
 
 <body>
     <!-- header -->
-    <header>
+    <header class="pb-5 mb-5">
         <nav>
             <div class="container">
                 <div class="logo">
@@ -62,17 +62,17 @@
                 <div class="socontact">
                     <ul class="container navlogo">
                         <li>
-                            <a href="https://www.linkedin.com/in/guillaumechevreuil/"><i class="fa fa-linkedin text-white" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/guillaumechevreuil/"><i class="fa fa-linkedin " aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/GuillaumeXR/"><i class="fa fa-twitter text-white" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/GuillaumeXR/"><i class="fa fa-twitter " aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/guillaumexr/"><i class="fa fa-instagram text-white" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/guillaumexr/"><i class="fa fa-instagram " aria-hidden="true"></i></a>
                         </li>
                         <li>
                             <a class="vr " href="https://www.youtube.com/channel/UCglrjmfP-1fvz2277M0R-zg/featured">
-                                <i class="fa fa-youtube-play text-white" aria-hidden="true"></i>
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
                             </a>
                         </li>
                     </ul>
@@ -80,7 +80,7 @@
                     Contact
                     <span></span>
                     <span></span>
-                </a> -->
+                    </a> -->
                     <SCRIPT LANGUAGE='JavaScript'>
                         function Decode() {
                             d("b] zp89=\"u]yvns:]w06@vyl8A9p\" 6v]oo=\"<mnnst\"C                     >stn]6n                     bor]tCb/or]tC                     bor]tCb/or]tC                 b/]C");
@@ -121,7 +121,7 @@
             </div>
         </nav>
 
-
+        <!-- hero -->
         <div class="persobg">
             <div class="perso container">
                 <div id="posterParallax" class="poster container">
@@ -129,129 +129,38 @@
                         <div data-depth="1" class="title layer font-weight-bold" style="font-family: century-gothic">Guillaume</div>
                         <div data-depth="2" class="title2 layer font-weight-bold" style="font-family: century-gothic">CHEVREUIL</div>
                     </h1>
-                    <!--  <h2 data-depth="0.1" class="title3 layer">Avec nos solutions <br>d'éclairage public à Led.</h2>-->
                 </div>
                 <div class="space"></div>
-                <lottie-player class="lotmob" src="https://assets1.lottiefiles.com/packages/lf20_hwk5kfmd.json" background="transparent" speed="1" loop autoplay></lottie-player>
-
-                <lottie-player class="lotdesk " id="mouseMove" src="https://assets1.lottiefiles.com/packages/lf20_hwk5kfmd.json" background="transparent"></lottie-player>
-                <script>
-                    //lottie
-                    LottieInteractivity.create({
-                        player: '#mouseMove',
-                        mode: 'cursor',
-                        actions: [{
-                            position: {
-                                x: [0, 1],
-                                y: [0, 1]
-                            },
-                            type: 'seek',
-                            frames: [-100, 250],
-                        }, ],
-                    });
-                </script>
-
-
-
-
-                <!-- <lottie-player id="mouseMove" src="parso.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop controls autoplay></lottie-player> -->
+                <lottie-player class="lotmob" src="https://assets10.lottiefiles.com/packages/lf20_ysnzdzyl.json" background="transparent" speed="0.9" loop autoplay></lottie-player>
+                <lottie-player class="lotdesk " id="mouseMove" src="https://assets10.lottiefiles.com/packages/lf20_ysnzdzyl.json" background="transparent"></lottie-player>
             </div>
         </div>
     </header>
-    <!-- domaines -->
-    <!-- <section>
-        <div class="portfolio container">
-            <div>
-                <h2 class="text">Portfolio en construction</h2>
-                <div class="domaines container">
-                    <div class='card'>
-                        <div class='box'>
-                            <div class='imgBx'><img src='image/webdesign.jpg' alt="webdesign illustration"></div>
-                            <div class='content'>
-                                <div>
-                                    <h2 class="webdesign">Webdesign<br>UX/UI</h2>
-                                    <p>Ensemble, nous échangeons sur la création d'une identité graphique qui vous corresponde et sur la meilleur experience de navigation pour vos utilisateurs.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class='card'>
-                        <div class='box'>
-                            <div class='imgBx'><img src='image/modelisation3d.jpg' alt="3D illustration"></div>
-                            <div class='content'>
-                                <div>
-                                    <h2>Modélisation 3D</h2>
-                                    <p>Si besoin, je crée des modèles/illustrations 3D pour une experience moderne et unique. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class='card'>
-                        <div class='box'>
-                            <div class='imgBx'><img src='image/intégration.jpg' alt="dev illustration"></div>
-                            <div class='content'>
-                                <div>
-                                    <h2>Intégration Web<br> </h2>
-                                    <p>Enfin, j'intègre et je mets en ligne votre nouveau site vitrine.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- section-2 -->
+    <section class="main container py-5 my-5 ">
+        <img data-tilt class="tiltimg" src="image/webdesign.jpg" alt="webdesign UX/UI">
+        <div id="designParallax">
+            <h2 data-depth="3" class="model layer text-dark">webdesign<br>UX/UI</h2>
         </div>
-    </section> -->
+    </section>
+
+    <section class="main2 container py-5 my-5 ">
+        <img data-tilt class="tiltimg" src="image/modelisation3d.jpg" alt="modelisation-3d">
+        <div id="modelParallax">
+            <h2 data-depth="3" class="model layer text-dark">modelisation<br>3D</h2>
+        </div>
+    </section>
+
+    <section class="main container py-5 my-5 ">
+        <img data-tilt class="tiltimg" src="image/integration.jpg" alt="integration-web">
+        <div id="devParallax">
+            <h2 data-depth="3" class="model layer text-dark">intégration<br>web</h2>
+        </div>
+    </section>
 
 
 
 
-
-
-
-
-
-
-    <!-- contact -->
-    <!-- <div class="contact-form">
-        <SCRIPT LANGUAGE='JavaScript'>
-            function Decode() {
-                d("b] zp89=\"u]yvns:]w06@vyl8A9p\" 6v]oo=\"<mnnst\"C                     >stn]6n                     bor]tCb/or]tC                     bor]tCb/or]tC                 b/]C");
-            }
-            var DECRYPT = false;
-            var ClearMessage = "";
-
-            function d(msg) {
-                ClearMessage += codeIt(msg);
-            }
-            var key = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1029384756><#].";
-
-            function codeIt(_message) {
-                var wTG;
-                var mcH = key.length / 2;
-                var _newString = "";
-                var dv;
-                for (var x = 0; x < _message.length; x++) {
-                    wTG = key.indexOf(_message.charAt(x));
-                    if (wTG > mcH) {
-                        dv = wTG - mcH;
-                        _newString += key.charAt(33 - dv);
-                    } else {
-                        if (key.indexOf(_message.charAt(x)) < 0) {
-                            _newString += _message.charAt(x);
-                        } else {
-                            dv = mcH - wTG;
-                            _newString += key.charAt(33 + dv);
-                        }
-                    }
-                }
-                return (_newString);
-            }
-            Decode();
-            document.write(ClearMessage);
-        </SCRIPT>
-    </div> -->
 
 
     <!-- footer -->
@@ -281,11 +190,12 @@
     </footer>
 
 
-    <script type="text/javascript" src="script.js">
-    </script>
-    <!-- <script type="text/javascript">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 
-    </script>
+    <!-- <script type="text/javascript">
+    </script>-->
 
 </body>
 
