@@ -23,6 +23,7 @@ var parallax = new Parallax(scene, {
 });
 
 
+
 //lottie
 LottieInteractivity.create({
     player: '#mouseMove',
@@ -44,6 +45,6 @@ LottieInteractivity.create({
     actions: [{
         visibility: [0, 1],
         type: "seek",
-        frames: [-50, 250],
+        frames: [-300, 300],
     }, ]
 });
