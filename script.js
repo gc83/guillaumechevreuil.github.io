@@ -36,3 +36,14 @@ LottieInteractivity.create({
         frames: [-100, 250],
     }, ],
 });
+
+
+LottieInteractivity.create({
+    mode: "scroll",
+    player: '#lotscroll',
+    actions: [{
+        visibility: [0, 1],
+        type: "seek",
+        frames: [-50, 250],
+    }, ]
+});
