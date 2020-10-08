@@ -300,8 +300,8 @@ nav .container ul li a {
     position: absolute;
 }
 
-.title {
-    /* color: #6fffcf; */
+
+/* .title {
     background: linear-gradient(#00fbd2 60%, black 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -321,9 +321,10 @@ nav .container ul li a {
     font-size: 2rem;
     z-index: 1000;
     text-shadow: 5px 0px 8px rgba(0, 0, 0, 0.2);
-}
+} */
 
-@media screen and (min-width: 768px) {
+
+/* @media screen and (min-width: 768px) {
     .title {
         margin-top: -3rem;
         text-align: unset;
@@ -338,7 +339,7 @@ nav .container ul li a {
         font-size: 4.5rem;
         padding-top: 3rem;
     }
-}
+} */
 
 .lotmob {
     width: 100%;
