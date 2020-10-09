@@ -25,26 +25,3 @@ var parallax = new Parallax(scene, {
 
 
 //lottie
-LottieInteractivity.create({
-    player: '#mouseMove',
-    mode: 'cursor',
-    actions: [{
-        position: {
-            x: [0, 1],
-            y: [0, 1]
-        },
-        type: 'seek',
-        frames: [-1, 64],
-    }, ],
-});
-
-
-LottieInteractivity.create({
-    mode: "scroll",
-    player: '#lotscroll',
-    actions: [{
-        visibility: [0, 1],
-        type: "seek",
-        frames: [-1, 64],
-    }, ]
-});
