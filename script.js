@@ -1,8 +1,8 @@
-//paralax hero
-var scene = document.getElementById('posterParallax');
-var parallax = new Parallax(scene, {
-    selector: '.layer'
-});
+//paralax hero =>bug
+// var scene = document.getElementById('posterParallax');
+// var parallax = new Parallax(scene, {
+//     selector: '.layer'
+// });
 
 //paralax webdesign
 var scene = document.getElementById('designParallax');
@@ -45,6 +45,6 @@ LottieInteractivity.create({
     actions: [{
         visibility: [0, 1],
         type: "seek",
-        frames: [-1, 64],
+        frames: [-220, 150],
     }, ]
 });
