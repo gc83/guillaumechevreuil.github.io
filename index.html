@@ -50,7 +50,7 @@
 
 <body>
     <!-- header -->
-    <header class="pb-5 mb-5">
+    <header>
         <nav>
             <div class="container">
                 <div class="logo">
@@ -87,21 +87,21 @@
         </nav>
 
         <!-- hero -->
-        <div class="container">
+        <div class="container ">
             <!-- <div class="space"></div> -->
-            <lottie-player id="lotscroll" class="lotmob" src="https://assets6.lottiefiles.com/packages/lf20_psekvwle.json" background="transparent" speed="0.85" loop autoplay></lottie-player>
+            <lottie-player id="lotscroll" class="lotmob mt-5" src="https://assets6.lottiefiles.com/packages/lf20_v9vrfm1t.json" background="transparent" speed="0.85" loop autoplay></lottie-player>
             <script>
                 LottieInteractivity.create({
                     mode: "scroll",
                     player: '#lotscroll',
                     actions: [{
-                        visibility: [0, 1],
+                        visibility: [0, 0.8],
                         type: "seek",
-                        frames: [-1, 64],
+                        frames: [-130, 64],
                     }, ]
                 });
             </script>
-            <lottie-player id="mouseMove" class="lotdesk mt-2" src="https://assets6.lottiefiles.com/packages/lf20_psekvwle.json" background="transparent" speed="0.85"></lottie-player>
+            <lottie-player id="mouseMove" class="lotdesk mt-2" src="https://assets6.lottiefiles.com/packages/lf20_v9vrfm1t.json" background="transparent" speed="0.85"></lottie-player>
             <script>
                 LottieInteractivity.create({
                     player: '#mouseMove',
@@ -137,7 +137,7 @@
             <div id="designParallax">
                 <h2 data-depth="1" class="model layer text-dark">webdesign<br>UX/UI</h2>
             </div>
-            <p class="m-5 px-5">La création et la conception de site web ou webdesign est la conception de l'interface web : l’architecture interactionnelle, l’organisation des pages, l’arborescence et la navigation dans un site web. La conception d'un design web tient compte
+            <p class="def m-5 px-5">La création et la conception de site web ou webdesign est la conception de l'interface web : l’architecture interactionnelle, l’organisation des pages, l’arborescence et la navigation dans un site web. La conception d'un design web tient compte
                 des contraintes spécifiques du support Internet, notamment en termes d’ergonomie, d’utilisabilité et d’accessibilité.(Wiki)</p>
         </div>
     </section>
