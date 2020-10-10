@@ -299,6 +299,7 @@ nav .container ul li a {
 .lotmob {
     width: 100%;
     margin: 0 auto;
+    padding: 8em 0;
 }
 
 .lotdesk {
@@ -335,6 +336,13 @@ nav .container ul li a {
     box-shadow: 10px 5px 15px;
     max-width: 40%;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .lotdesign {
+        margin: 0 auto;
+        width: 200px;
+    }
 }
 
 @media screen and (min-width: 768px) {
